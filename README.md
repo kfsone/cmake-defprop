@@ -35,7 +35,7 @@ While not the worst thing in the world, it's a weird case to try and teach.
 
 ```
     get_property (runtimes ${TARGET} runtime_stuff)
-    if (runtimes AND NOT runtimes STREQUAL "runtimes-NOTFOUND")
+    if (runtimes AND NOT ${runtimes} STREQUAL "runtimes-NOTFOUND")
 ```
 
 this is not something I expect developers who aren't living in CMake to get right,
